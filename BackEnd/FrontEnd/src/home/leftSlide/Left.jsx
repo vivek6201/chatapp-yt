@@ -6,7 +6,7 @@ import LogoutButton from "./LogoutButton";
 function Left() {
   return (
     <>
-      <div className="w-[30%] h-screen bg-black flex-1 overflow-auto">
+      <div className="w-full overflow-auto">
         <Search />
         <Users />
         <LogoutButton />

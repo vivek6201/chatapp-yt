@@ -4,6 +4,7 @@ import Messages from "./Messages";
 import TypeSend from "./TypeSend.jsx";
 import useConversation from "../../zustand/useConversation.js";
 import { useAuth } from "../../components/context/AuthProvider.jsx";
+import { CiMenuFries } from "react-icons/ci";
 
 const NewConversation = () => {
   const { selectedConversation, setSelectedConversation } = useConversation();
@@ -41,7 +42,13 @@ export default NewConversation;
 const NoChatSelected = () => {
   const [authUser] = useAuth();
   return (
-    <>
+    <div className="relative">
+      <label
+        htmlFor="my-drawer-2"
+        className="btn btn-ghost drawer-button lg:hidden absolute left-5"
+      >
+        <CiMenuFries className="text-white" />
+      </label>
       <div className="flex h-screen items-center justify-center">
         <h1 className="text-center">
           Welcome <span className="font-bold text-xl">{authUser.fullName}</span>
@@ -50,6 +57,6 @@ const NoChatSelected = () => {
           your contacts
         </h1>
       </div>
-    </>
+    </div>
   );
 };
