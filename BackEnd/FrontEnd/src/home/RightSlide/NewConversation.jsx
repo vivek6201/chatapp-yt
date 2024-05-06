@@ -50,7 +50,7 @@ const NoChatSelected = () => {
         <CiMenuFries className="text-white" />
       </label>
       <div className="flex h-screen items-center justify-center">
-        <h1 className="text-center">
+        <h1 className="text-center text-white">
           Welcome <span className="font-bold text-xl">{authUser.fullName}</span>
           <br />
           No chat selected, please start conversation by selecting anyone to

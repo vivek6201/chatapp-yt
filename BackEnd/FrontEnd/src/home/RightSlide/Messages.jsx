@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Message from "./Message";
 import useGetMessage from "../../components/context/useGetMessage.js";
 import LoadingSkeleton from "../../skeleton/LoadingSkeleton.jsx";
@@ -38,7 +38,7 @@ function Messages() {
 
           {!loading && messages.length === 0 && (
             <div>
-              <p className="text-center mt-[20%]">
+              <p className="text-center mt-[20%] text-white">
                 Say! Hi to start the conversation
               </p>
             </div>
