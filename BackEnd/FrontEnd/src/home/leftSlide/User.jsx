@@ -24,8 +24,8 @@ function User({ users }) {
             </div>
           </div>
           <div>
-            <h3 className="font-bold">{users.fullName}</h3>
-            <span className="text-sm">{users.email}</span>
+            <h3 className="text-white font-bold">{users.fullName}</h3>
+            <span className="text-white text-sm">{users.email}</span>
           </div>
         </div>
       </div>

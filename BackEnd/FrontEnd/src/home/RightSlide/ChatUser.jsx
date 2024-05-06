@@ -29,7 +29,7 @@ function ChatUser() {
           </p>
         </div>
         <div>
-          <h3 className="text-xl">{selectedConversation.fullName}</h3>
+          <h3 className="text-xl text-white">{selectedConversation.fullName}</h3>
           <span className="text-sm">
             {" "}
             {getUserOnlineStatus(selectedConversation._id)}
