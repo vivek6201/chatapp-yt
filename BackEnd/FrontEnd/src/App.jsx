@@ -2,6 +2,7 @@ import Left from "./home/leftSlide/Left";
 import Right from "./home/RightSlide/Right";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import { Toaster } from "react-hot-toast";
 
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useAuth } from "./components/context/AuthProvider";
@@ -11,6 +12,7 @@ function App() {
   console.log(authUser);
   return (
     <>
+      <Toaster />
       <Routes>
         <Route
           path="/"

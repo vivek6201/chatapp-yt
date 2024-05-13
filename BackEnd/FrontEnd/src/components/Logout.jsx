@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "./context/AuthProvider";
 import axios from "axios";
 import Cookies from "js-cookie";
+import toast from "react-hot-toast";
 
 const useLogout = () => {
   const [authUser, setAuthUser] = useAuth();
@@ -14,10 +15,10 @@ const useLogout = () => {
       Cookies.remove("jwt");
       setAuthUser(null);
       setLoading(false);
-      alert("Logged out successfully");
+      toast.success("Logged out successfully");
     } catch (err) {
       if (err.res) {
-        alert(err.message);
+        toast.error(err.message);
       }
     }
   };
