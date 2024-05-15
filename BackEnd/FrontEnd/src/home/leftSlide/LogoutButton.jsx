@@ -11,7 +11,7 @@ function LogoutButton() {
           <div className="mx-6 pt-5  ">
             <TbLogout2
               onClick={logout}
-              className="text-5xl text-center hover:rounded-full hover:bg-slate-600 duration-200 p-2 cursor-pointer"
+              className="text-5xl text-center hover:rounded-full hover:bg-slate-600 duration-200 p-2 cursor-pointer text-white"
             />
           </div>
         ) : (

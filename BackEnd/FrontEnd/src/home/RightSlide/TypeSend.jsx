@@ -34,13 +34,13 @@ function TypeSend() {
                 setMessage(e.target.value);
                 // handleTyping();
               }}
-              className="input input-bordered w-full md:w-[700px] mx-4 mt-3"
+              className="input input-bordered w-full mx-4 mt-3"
             />
             <button type="submit">
               {loading ? (
                 <div className="loading loading-spinner"></div>
               ) : (
-                <IoSend className="text-3xl mt-2 cursor-pointer" />
+                <IoSend className="text-3xl mt-2 cursor-pointer text-gray-300 mr-2" />
               )}
             </button>
           </div>

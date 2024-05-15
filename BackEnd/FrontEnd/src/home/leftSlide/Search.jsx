@@ -31,14 +31,14 @@ function Search() {
               <label className="p-3 border-[1px] border-gray-700 rounded-lg outline-none bg-slate-900 flex items-center gap-2 w-[80%]">
                 <input
                   type="text"
-                  className="grow"
+                  className="bg-transparent outline-none text-white"
                   placeholder="Search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                 />
               </label>
               <button type="submit">
-                <FaSearch className="text-5xl cursor-pointer hover:bg-gray-600 duration-300 hover:rounded-full p-2" />
+                <FaSearch className="text-4xl cursor-pointer hover:bg-gray-600 duration-300 hover:rounded-full p-2 text-white" />
               </button>
             </div>
           </form>
